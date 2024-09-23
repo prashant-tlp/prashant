@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="app-page-container ">
+    <div className="app-page-container">
       <div className="typo">    
-        <pre className="text-5xl"><strong>Hello, I'm Prashant</strong></pre>
+        <pre className="text-5xl"><strong>Hello, I&apos;m Prashant</strong></pre>
         <h3 className="text-3xl">A full stack developer </h3>
         <pre className="text-2xl pl-2">I can help you with</pre>
         <ul style={{ listStyleType: 'disc' }} className="pl-8 mb-5">
