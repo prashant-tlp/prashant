@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --background: #ededed;
+  --foreground: #0a0a0a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,7 +51,7 @@
 
 .page-body {
   /* background-color: cadetblue; */
-  height: 82vh;
+  height:82vh;
   display: flex;
   /* padding: 50px; */
   justify-content: center;
@@ -60,7 +60,7 @@
 
 @media (min-widtg:768){
   .page-body {
-    height: 60vh;
+    height: 82vh;
   }
 }
 
@@ -120,8 +120,8 @@
   display: flex;
   align-items: center;
   gap: 100px;
-
 }
+
 
 .footer {
   height: 8vh;
