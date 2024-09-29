@@ -11,5 +11,5 @@ export const skill =[
     {name:'mysql', link:'/assets/icons/Skill/mysql.webp'},
     {name:'node', link:'/assets/icons/Skill/node.png'},
     {name:'express', link:'/assets/icons/Skill/express.png'},
-    {name:'github', link:'/assets/icons/skill/git.png'}
+    {name:'github', link:'/assets/icons/Skill/git.png'}
 ]
