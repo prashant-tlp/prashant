@@ -1,20 +1,36 @@
+'use client'
+import Link from 'next/link';
+import React, { useState } from 'react';
+import { NavData } from '@/Data/Navbar';
+import { HiMiniBars3BottomRight } from "react-icons/hi2";
+import { HiMiniBars3BottomLeft } from "react-icons/hi2";
 
-import Link from 'next/link'
-import React from 'react'
-import { NavData } from '@/Data/Navbar'
-import Image from 'next/image'
 const Navbar = () => {
+  const [navOpen, setNavOpen] = useState(true);
+
   return (
-    <nav className='nav'>
-      <ul className='ulist '>
-        {
-          NavData.map((e:any,i:any)=>
-            <li key={i}><Link href={`${e.Link}`}>{e.type == "image" ? <Image className='profile-img-round' width={30} height={25} src={`/assets/image/profile.jpg`} alt=''></Image> : e.name}</Link></li>
-          )
-        }
+    <nav className="justify-around p-2 items-center  md:flex gap-2 w-full  ">
+      <div className='flex justify-between '>
+      <span className='font-sans text-2xl md:text-3xl neon-text'>
+        PRASHANT
+      </span>
+      <button className='md:hidden text-right text-2xl md:text-3xl ' onClick={()=>setNavOpen(!navOpen)}>
+        {navOpen ? <HiMiniBars3BottomRight/> : <HiMiniBars3BottomLeft/>}
+      </button>
+
+      </div>
+      <ul className={`text-left static z-10 flex-col  text-2xl md:text-xl ${navOpen?'hidden':'block'} md:flex  md:flex-row gap-10 text-pretty font-semibold`}>
+        
+        {NavData.map((e:any, i:any) => (
+          <li key={i} className=''>
+            <Link className={`relative hover:underline active:bg-red-500 transition duration-500 `} href={e.Link}>
+              {e.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -2,8 +2,8 @@
 
 function About() {
   return (
-    <div>
-        <div className="m-1 sm:mt-24 sm:w-auto sm:mr-20 md:h-3/4 p-1">
+    <div className="app-page-container mx-5">
+        <div className="">
           <h3 className="text-xl sm:text-2xl text-orange-600  underline font-bold">about me</h3>
           <p className="text-sm my-2 sm:text-lg  border-orange-400 border-l-2 border-b-2  p-2">
             I&apos;m Prashant, a former gearhead <strong>(Mechanical Engineer)</strong> and current coding enthusiast. While

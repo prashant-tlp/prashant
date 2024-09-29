@@ -28,10 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="geistMono.className">
-      <body className={`fgh ${geistSans.variable} ${geistMono.variable} antialiased`} >
+      <body className={` font-mono fgh ${geistSans.variable} ${geistMono.variable} antialiased`} >
         <div className="body-container">
-          <div className="nav-container"><Navbar></Navbar></div>       
-          <div className="page-body"><div className="child-container">{children}</div></div>
+          <div className="nav-container"><Navbar /></div>       
+          <div className="page-body"><div className="child-container" >{children}</div></div>
           <Footer></Footer>
         </div>
       </body>
