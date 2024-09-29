@@ -6,7 +6,7 @@ function Skills() {
     <div className=' h-full overflow-auto md:overflow-hidden '>
           <div className="flex flex-wrap justify-center gap-4 p-4 ">
       {
-        skill.map((e:any,i:any)=>(
+        skill.map((e,i)=>(
           <div key={i} className="flex flex-col gap-5 justify-center items-center hover:scale-50 border h-32 w-48 bg-white ">
             <Image src={e.link} height={32} width={48} alt='' ></Image>
             <span className='text-black uppercase' >{e.name}</span>
