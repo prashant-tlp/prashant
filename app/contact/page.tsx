@@ -1,5 +1,5 @@
 'use client'
-import React, { ReactEventHandler, useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import axios from 'axios'
 import { enqueueSnackbar, SnackbarProvider } from 'notistack';
 interface ServerResponse {
@@ -9,10 +9,10 @@ interface ServerResponse {
 
 function Contact() {
     const [input, setInput] = useState({ name: '', email: '', message: '' })
-    const handle = (e: any) => {
+    const handle = (e:ChangeEvent<HTMLInputElement>) => {
         setInput({ ...input, [e.target.name]: e.target.value })
     }
-    const submit = async (e: any) => {
+    const submit = async (e:ChangeEvent<HTMLInputElement>) => {
         e.preventDefault();
         try {
             const response = await axios.post<ServerResponse>('/api/contact', input)

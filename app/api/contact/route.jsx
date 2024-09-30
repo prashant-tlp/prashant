@@ -1,5 +1,5 @@
-import { NextRequest,NextResponse } from "next/server";
-const nodemailer =require("nodemailer")
+import {NextResponse } from "next/server";
+import nodemailer from 'nodemailer'
 
 export async function POST(request) {
     const req = await request.json()
