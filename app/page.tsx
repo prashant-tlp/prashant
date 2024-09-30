@@ -19,7 +19,7 @@ export default function Home() {
                     I can help you with
 
                 </p>
-                <ul className=" ml-5 list-disc">
+                <ul className=" uppercase ml-5 list-disc">
                         <li>React</li>
                         <li>next</li>
                         <li>Angular</li>
