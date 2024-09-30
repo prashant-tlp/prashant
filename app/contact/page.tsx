@@ -13,7 +13,7 @@ function Contact() {
         setInput({ ...input, [e.target.name]: e.target.value })
     }
     const submit = async (e:FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+        // e.preventDefault();
         try {
             const response = await axios.post<ServerResponse>('/api/contact', input)
             if (response.data.status === 200) {
