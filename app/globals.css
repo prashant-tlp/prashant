@@ -60,7 +60,7 @@
 }
 
 .page-body {
-  height: 84vh;
+  height:84vh;
   display: flex;
   width: 100%;
   padding: 5px;
@@ -68,14 +68,16 @@
   align-items: center;
 }
 
-@media (min-widtg:768){
+@media (min-width:768){
   .page-body {
     height: 84vh;
+  }
+  .child-container {
+    height: 76vh;
   }
 }
 
 .child-container {
-  /* background-color: darkgoldenrod; */
   align-items: center;
   display: flex;
   justify-content: center;
