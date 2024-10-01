@@ -61,7 +61,7 @@ function Contact() {
                         <div className="py-2 w-full">
                             <div>
                                 <button type="submit"
-                                    className="button border-black text-md">
+                                    className="uppercase px-3 py-2 text-xl  bg-orange-400 border-2 border-transparent   hover:bg-orange-300">
                                     Send
                                 </button>
                             </div>

@@ -30,9 +30,9 @@ export default function RootLayout({
     <html lang="en" className="geistMono.className">
       <body className={` font-mono fgh ${geistSans.variable} ${geistMono.variable} antialiased`} >
 
-        <div className="body-container p-2 md:p-0 ">
+        <div className="body-container">
           <div className="nav-container"><Navbar /></div>
-          <div className="page-body "><div className="child-container m-2" >
+          <div className="page-body"><div className="child-container" >
             {children}
           </div></div>
           <Footer></Footer>
