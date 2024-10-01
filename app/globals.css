@@ -56,7 +56,7 @@ body {
 }
 
 .page-body {
-  height: calc(92vh - 8vh); 
+  height: calc(84vh - 8vh); 
   display: flex;
   width: 100%;
   padding: 5px;
@@ -66,7 +66,7 @@ body {
 
 @media (min-width: 768px) {
   .page-body {
-    height: auto;
+    height: 84vh;
   }
   /* .child-container {
     height: 84vh
