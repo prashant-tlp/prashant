@@ -28,9 +28,14 @@
 }
 
 .body-container {
-  /* background-color: aqua; */
   height: 100vh;
+}
 
+@media (min-width:768){
+  .body-container {
+    height: auto;
+    margin: 2;
+  }
 }
 
 .nav-container {
