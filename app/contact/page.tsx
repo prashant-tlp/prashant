@@ -12,7 +12,8 @@ function Contact() {
     const handle = (e:ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setInput({ ...input, [e.target.name]: e.target.value })
     }
-    const submit = async (e:FormEvent<HTMLFormElement>) => {
+    const submit = async () => {
+        // e:FormEvent<HTMLFormElement>
         // e.preventDefault();
         try {
             const response = await axios.post<ServerResponse>('/api/contact', input)
