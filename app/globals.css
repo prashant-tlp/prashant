@@ -28,7 +28,7 @@ body {
 }
 
 .body-container {
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   padding: 0 5px;
   box-sizing: border-box; 
