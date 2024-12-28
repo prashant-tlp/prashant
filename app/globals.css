@@ -28,9 +28,8 @@ body {
 }
 
 .body-container {
-  height: 100dvh;
+  height: 100%;
   width: 100vw;
-  padding: 0 5px;
   box-sizing: border-box; 
 }
 

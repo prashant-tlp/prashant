@@ -32,7 +32,7 @@ export default function RootLayout({
 
         <div className="body-container">
           <div className="nav-container"><Navbar /></div>
-          <div className="page-body"><div className="child-container" >
+          <div className="page-body"><div className="child-container overflow-auto" >
             {children}
           </div></div>
           <Footer></Footer>
