@@ -4,7 +4,7 @@ const contactSchema = new mongoose.Schema({
     name: String,
     email:String,
     message:String,
-    date: {type:Date, default:Date.now}
+    date: {type:String, default: () => new Date().toLocaleString("en-US", { timeZone: "UTC" })}
 })
 
 export const contactData = mongoose.models.connects || mongoose.model("connects",contactSchema)

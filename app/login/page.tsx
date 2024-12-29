@@ -1,12 +1,15 @@
 "use client";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+  const router = useRouter()
   const [authData, setAuthData] = useState({
     email: "",
     password: "",
   });
+
 
   const inputHandle = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -20,6 +23,7 @@ const Page = () => {
         variant: "success",
         autoHideDuration: 3000,
       });
+      router.push('/messages')
     } else {
       enqueueSnackbar("Invalid Credentials", {
         variant: "error",
