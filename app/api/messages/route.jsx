@@ -1,4 +1,4 @@
-import { ,NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import { contactData } from "@/lib/model/contactModel";
 export async function POST (){
