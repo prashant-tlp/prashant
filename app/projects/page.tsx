@@ -7,16 +7,17 @@ import { CiLink } from "react-icons/ci";
 const page = () => {
   // const Image = image
   return (
-    <div className="h-full w-full">
+    <div className="h-full flex justify-center w-full">
+      <div>
       {projects.map((e,i) => (
-        <div key={i} className=" p-2  gap-2 sm:flex justify-center bg-red-200 w-11/12">
+        <div key={i} className=" p-2  gap-2 sm:flex justify-center w-full">
           <Image
-            height={100}
-            width={200}
+            height={10}
+            width={400}
             src={e.image}
             alt="project"
           ></Image>
-          <div className=" sm:w-3/5 h-auto p-2 text-left border-orange-400 border-l-2 border-b-2">
+          <div className="w-full  h-auto p-2 text-left border-orange-400 border-l-2 border-b-2">
             <span className="text-lg font-bold text-nowrap flex items-center gap-2 "><p>Project Name : {e.name}</p><Link className="animate-pulse text-green-500" href={e.pLink} target="_blank"><FaExternalLinkAlt></FaExternalLinkAlt></Link></span>
             <hr className="my-1 border-black" />
             <p className="font-semibold">Description: </p>
@@ -26,6 +27,7 @@ const page = () => {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 };

@@ -31,6 +31,7 @@ export default function RootLayout({
       <body className={` font-mono fgh ${geistSans.variable} ${geistMono.variable} antialiased`} >
 
         <div className="body-container">
+          
           <div className="nav-container"><Navbar /></div>
           <div className="page-body"><div className="child-container overflow-auto" >
             {children}

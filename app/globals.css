@@ -180,3 +180,15 @@ Image {
 .neon-border {
   box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff8800, 0 0 35px #ff8800, 0 0 40px #ff8800;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}

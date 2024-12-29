@@ -1,6 +1,6 @@
 export const projects = [
-    {image:'/assets/image/profile.jpg',pLink:'https://jps-frontend-ten.vercel.app/', name:'Loayalty Program Backend Panel',description:''},
-    {image:'/assets/image/profile.jpg',pLink:'', name:'Todo App',description:''},
-    {image:'/assets/image/profile.jpg',pLink:'', name:'Recipee App',description:''},
-    {image:'/assets/image/profile.jpg',pLink:'', name:'Bookstore App',description:''},
+    {image:'/assets/image/jps-panel.png', pLink:'https://jps-frontend-ten.vercel.app/', name:'Loayalty Program Backend Panel',description:'I have developed a loyalty program web panel using Next.js, providing a seamless and dynamic interface for managing customer rewards and engagement. The panel features interactive charts and components to enhance data visualization and user experience.'},
+    {image:'/assets/image/jps-panel.png',pLink:'', name:'Todo App',description:'I have developed a feature-rich to-do app using React and Tailwind CSS, offering a visually appealing and user-friendly interface for task management and organization. The app includes interactive components and responsive design to enhance productivity and streamline workflows.'},
+    {image:'/assets/image/cookr.png',pLink:'https://coockr.netlify.app/', name:'Recipee App',description:'I have developed a recipe app using React and Tailwind CSS, designed with a clean and responsive interface for exploring and organizing recipes. The app features interactive elements and a streamlined layout to provide an intuitive and engaging user experience.'},
+    {image:'/assets/image/jps-panel.png',pLink:'', name:'Bookstore App',description:'I have developed a bookstore app using React and Tailwind CSS, featuring a clean and responsive interface for browsing and managing books. The app includes interactive components and an intuitive layout to enhance the shopping and reading experience'},
 ]
