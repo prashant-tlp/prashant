@@ -1,8 +1,8 @@
 "use client";
 import { SnackbarProvider, enqueueSnackbar } from "notistack";
-import React, { ReactHTMLElement, useState } from "react";
+import React, { useState } from "react";
 
-const page = () => {
+const Page = () => {
   const [authData, setAuthData] = useState({
     email: "",
     password: "",
@@ -12,7 +12,7 @@ const page = () => {
     const { name, value } = e.target;
     setAuthData((prev) => ({ ...prev, [name]: value }));
   };
-  const submit = (e: any) => {
+  const submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const { email, password } = authData;
     if (email === "som@gmail.com" && password === "prashant@99") {
@@ -38,6 +38,7 @@ const page = () => {
       >
         <div>
           <form
+            onSubmit={submit}
             action=""
             className="gap-5 bg-gradient-to-r from-gray-300 to-orange-300 p-3 text-2xl flex flex-col"
           >
@@ -58,7 +59,7 @@ const page = () => {
                 name="password"
               />
             </div>
-            <button className="bg-red-200 rounded-md" onClick={submit}>
+            <button className="bg-red-200 rounded-md">
               Login
             </button>
           </form>
@@ -68,4 +69,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

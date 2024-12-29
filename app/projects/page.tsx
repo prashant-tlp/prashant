@@ -3,7 +3,6 @@ import Image from "next/image";
 import { projects } from "@/Data/projects";
 import Link from 'next/link'
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { CiLink } from "react-icons/ci";
 const page = () => {
   // const Image = image
   return (
