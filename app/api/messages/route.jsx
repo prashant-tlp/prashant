@@ -1,8 +1,8 @@
-import { NextRequest,NextResponse } from "next/server";
+import { ,NextResponse } from "next/server";
 import dbConnect from "@/lib/dbConnect";
 import { contactData } from "@/lib/model/contactModel";
-export async function POST (req,res){
-    const {email, password } = req.body;
+export async function POST (){
+    // const {email, password } = req.body;
     await dbConnect();
     try {
         const result = await contactData.find();

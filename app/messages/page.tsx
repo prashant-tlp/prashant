@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import moment from "moment";
 interface ServerResponse {
   message: string;
-  result: any;
+  result: [];
   status: number;
 }
 
