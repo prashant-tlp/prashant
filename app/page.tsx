@@ -35,9 +35,9 @@ export default function Home() {
                     </a> */}
                 </div>
             </div>
-            <div className="hidden items-center sm:block sm:w-1/3 lg:w-3/5 relative">
-                <Image height={180} width={180}  src={`/assets/image/profile.jpg`} alt="pro" className="max-w-xs rounded-xl md:max-w-sm m-auto"/>
-            </div>
+            {/* <div className="hidden items-center sm:block sm:w-1/3 lg:w-3/5 relative">
+                <Image height={180} width={180}  src={`/assets/image/profile.png`} alt="pro" className="max-w-xs rounded-xl md:max-w-sm m-auto"/>
+            </div> */}
         </div>
     </div>
     </div>

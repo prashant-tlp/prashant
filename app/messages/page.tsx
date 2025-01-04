@@ -26,23 +26,23 @@ const Page = () => {
     getMessages();
   }, []);
   return(
-  <div className="bg-red-300 w-full h-full p-2">
+  <div className="w-full h-full p-2">
     {message.map((item:result, index:number) => (
       <ul
   key={index}
-  className="flex flex-wrap items-center gap-5 p-4 bg-green-200 rounded-lg shadow-md hover:bg-green-300 transition-all"
+  className="flex flex-wrap items-center gap-5 p-4 transition-all"
 >
   <li className="text-left font-bold w-1/12">{index + 1}</li>
-  <li className="text-left w-2/12 text-sm font-medium text-gray-700">
+  <li className="text-left w-2/12 text-sm font-medium ">
     {moment(item.date).format("DD/MM/YYYY hh:mm A")}
   </li>
-  <li className="text-left w-2/12 text-sm font-medium text-gray-700 truncate">
+  <li className="text-left w-2/12 text-sm font-medium  truncate">
     {item.name}
   </li>
-  <li className="text-left w-3/12 text-sm font-medium text-gray-700 truncate">
+  <li className="text-left w-3/12 text-sm font-medium  truncate">
     {item.email}
   </li>
-  <li className="text-left w-4/12 text-sm font-medium text-gray-700 truncate">
+  <li className="text-left w-4/12 text-sm font-medium  truncate">
     {item.message}
   </li>
 </ul>

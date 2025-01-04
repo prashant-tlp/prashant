@@ -46,7 +46,7 @@ const Page = () => {
             action=""
             className="gap-5 bg-gradient-to-r from-gray-300 to-orange-300 p-3 text-2xl flex flex-col"
           >
-            <div className="flex  p-2 flex-col gap-2">
+            <div className="flex text-black  p-2 flex-col gap-2">
               <label htmlFor="email">Email</label>
               <input
                 type="email"
@@ -63,7 +63,7 @@ const Page = () => {
                 name="password"
               />
             </div>
-            <button className="bg-red-200 rounded-md">
+            <button className="bg-orange-400 rounded-md">
               Login
             </button>
           </form>
