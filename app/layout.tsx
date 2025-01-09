@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/Layout/Navbar";
 import Footer from "@/Layout/Footer";
-import Transition from "./motion";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,7 +32,7 @@ export default function RootLayout({
         <div className="body-container">
           <div className="nav-container"><Navbar /></div>
           <div className="page-body "><div className="child-container mx-auto " >
-            <Transition >{children}</Transition> 
+            {children}
           </div></div>
           <Footer></Footer>
         </div>

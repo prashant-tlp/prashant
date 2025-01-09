@@ -13,6 +13,15 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        'nav-slide' :{
+          from:{"transform":"translateX(100%)",visibility: 'hidden'},
+          to:{"transform":"translateX(0)",visibility: 'visible'},
+        }
+      },
+      animation: {
+        'nav-slide': 'nav-slide 0.5s ease-in normal',
+        },
     },
   },
   plugins: [],

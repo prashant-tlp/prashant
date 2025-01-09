@@ -3,17 +3,14 @@ import React from "react";
 import { projects } from "@/Data/projects";
 import Link from 'next/link';
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { motion, useScroll } from "framer-motion";
 
 
 // return <motion.div style={{ scaleX: scrollYProgress }} />
 
 const page = () => {
-  const { scrollYProgress } = useScroll()
   return (
 
     <div className="items-start h-[84vh] justify-normal">
-      <motion.div style={{ scaleX: scrollYProgress }}/>
       <div>
         {projects.map((project, index) => (
           <div key={index} className=" p-4 m-4 rounded-md shadow flex flex-grow gap-5 ">

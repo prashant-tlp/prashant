@@ -21,7 +21,7 @@ const Navbar = () => {
 
       </div>
       <span className='sm:px-4 sm:rounded-full bg-transparent sm:bg-foreground text-background flex'>
-        <ul className={`text-left fixed items-center bg-foreground w-full md:w-auto md:static md:bg-transparent z-30 flex-col  text-2xl md:text-xl ${navOpen ? 'hidden' : 'block'} md:flex  md:flex-row gap-10 text-pretty font-semibold`}>
+        <ul className={`animate-nav-slide text-left fixed items-center bg-foreground w-full md:w-auto md:static md:bg-transparent z-30 flex-col  text-2xl md:text-xl ${navOpen ? 'hidden' : 'block'} md:flex  md:flex-row gap-10 text-pretty font-semibold`}>
 
           {NavData.map((e: any, i: any) => (
             <li key={i} className='sm:hover:text-orange-400 w-full sm:p-2 sm:rounded-full' onClick={() => { setNavOpen(true) }} >
