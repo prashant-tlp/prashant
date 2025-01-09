@@ -35,7 +35,7 @@ function Contact() {
                 horizontal: 'right',
             }}
             >
-                <div className="app-page-container ">
+                <div className="app-page-container mx-auto ">
                     <form onSubmit={submit}>
                         <div className="py-2 w-full">
                             <div className="relative">

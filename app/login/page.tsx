@@ -40,7 +40,7 @@ const Page = () => {
           horizontal: "right",
         }}
       >
-        <div>
+        <div className="app-page-container mx-auto">
           <form
             onSubmit={submit}
             action=""

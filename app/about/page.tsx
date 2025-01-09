@@ -2,7 +2,7 @@
 
 function About() {
   return (
-    <div className="w-9/12 ">
+    <div className="w-9/12 mx-auto">
         <div className="">
           <h3 className="text-xl sm:text-2xl text-orange-400  underline font-bold">about me</h3>
           <p className="text-sm my-2 sm:text-lg p-2  border-orange-400 border-l-2 border-b-2 ">

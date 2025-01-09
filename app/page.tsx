@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div className="app-page-container">
+    <div className="app-page-container mx-auto">
 
     <div className=" flex z-20 items-center overflow-hidden">
         <div className="container items-center gap-10 flex relative ">
