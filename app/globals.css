@@ -69,7 +69,7 @@ body {
 
 @media (min-width: 768px) {
   .page-body {
-    height: 84vh;
+    height: auto;
   }
   /* .child-container {
     height: 84vh
@@ -81,7 +81,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  /* overflow: auto; */
+  overflow: auto;
   height: 100%;
   width: 100%;
   padding: 5px;
@@ -128,7 +128,6 @@ body {
 .app-page-container {
   display: flex;
   align-items: center;
-  gap: 100px;
 }
 
 .footer {
@@ -152,8 +151,8 @@ Image {
 
 .typo {
   overflow: hidden; 
-  border-right: .15em solid orange;
-  white-space: nowrap; 
+  text-wrap: wrap;
+  border-right: .15em solid orange; 
   margin: 0 auto; 
   letter-spacing: .15em; 
   animation: 

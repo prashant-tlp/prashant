@@ -10,7 +10,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const page = () => {
   return (
 
-    <div className="items-start h-[84vh] justify-normal">
+    <div className="items-start h-[84vh] justify-normal overflow-auto">
       <div>
         {projects.map((project, index) => (
           <div key={index} className=" p-4 m-4 rounded-md shadow flex flex-grow gap-5 ">

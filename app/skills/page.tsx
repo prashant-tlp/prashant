@@ -3,8 +3,9 @@ import { skill } from '@/Data/skill'
 import Image from 'next/image'
 function Skills() {
   return (
-    <div className=' h-full overflow-auto md:overflow-hidden '>
-          <div className="flex flex-wrap justify-center gap-4 p-4 ">
+    <div className='absolute md:overflow-hidden '>
+
+          <div className="flex  flex-wrap justify-center gap-4 ">
       {
         skill.map((e,i)=>(
           <div key={i} style={{ animationDelay: `${i * 0.2}s` }}  className="animate-pop-ele flex flex-col gap-5 justify-center items-center hover:scale-95 border h-32 w-48 bg-white ">
