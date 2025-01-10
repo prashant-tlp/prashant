@@ -4,17 +4,17 @@ import TagCloudComponent from "@/Layout/tagclod";
 
 export default function Home() {
   return (
-    <div className="app-page-container mx-auto">
+    <div className="app-page-container items-center mx-auto">
 
     <div className=" flex z-20 items-center overflow-hidden">
-        <div className="container items-center gap-10 flex relative ">
+        <div className="container items-center gap-10 flex flex-col sm:flex-row relative ">
             <div className=" flex order-2 flex-col relative z-20">
                 <span className="w-20 h-2 bg-black dark:bg-white mb-12">
                     
                 </span>
                 <h1 className="uppercase text-3xl sm:text-5xl font-black flex flex-col leading-none ">
                     Hello, I&apos;m Prashant
-                    <div className="typo text-xl text-wrap sm:text-nowrap sm:text-3xl">
+                    <div className="typo text-xl text-wrap sm:text-nowrap h-8 sm:text-3xl">
                         A full stack developer
                     </div>
                 </h1>
@@ -37,7 +37,7 @@ export default function Home() {
                     </a> */}
                 </div>
             </div>
-            <div className="hidden items-center sm:block sm:w-1/3 lg:w-3/5 relative">
+            <div className=" items-center sm:block sm:w-1/3 lg:w-3/5 relative">
                         <TagCloudComponent />
                 {/* <Image height={180} width={180}  src={`/assets/image/profile.png`} alt="pro" className="max-w-xs rounded-xl md:max-w-sm m-auto"/> */}
             </div>

@@ -16,8 +16,8 @@ const Transition: React.FC<MotionProp> = ({ children }) => {
             exit={{ y: -20, opacity: 0 }}
             transition={{
                 ease: 'easeInOut', 
-                duration: 0.5, 
-                delay: 0.2,
+                duration: 0.7, 
+                delay: 0.3,
             }}
             className="flex flex-col w-full"
             key={pathname}

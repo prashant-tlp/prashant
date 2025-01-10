@@ -31,19 +31,6 @@ body {
   }
 }
 
-.body-container {
-  height: 100%;
-  width: 100vw;
-  box-sizing: border-box; 
-}
-
-@media (min-width: 768px) {
-  .body-container {
-    height: 84vh;
-    /* padding: 5px; */
-  }
-}
-
 .nav-container {
   width: 100%;
   height: 8vh;
@@ -58,43 +45,9 @@ body {
   }
 }
 
-.page-body {
-  height: calc(84vh - 8vh); 
-  display: flex;
-  width: 100%;
-  padding: 5px;
-  justify-content: center;
-  align-items: center;
-}
 
-@media (min-width: 768px) {
-  .page-body {
-    height: auto;
-  }
-  /* .child-container {
-    height: 84vh
-  } */
-}
 
-.child-container {
-  /* background-color: #ff8800; */
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  overflow: auto;
-  height: 100%;
-  width: 100%;
-  padding: 5px;
-}
 
-.nav {
-  width: 100%;
-  height: 50px;
-  align-items: center;
-  position: sticky;
-  display: flex;
-  justify-content: center;
-}
 
 .ulist {
   display: flex;
@@ -125,10 +78,6 @@ body {
   overflow: hidden;
 }
 
-.app-page-container {
-  display: flex;
-  align-items: center;
-}
 
 .footer {
   height: 8vh;

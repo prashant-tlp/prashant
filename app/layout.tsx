@@ -28,15 +28,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="geistMono.className">
-      <body className={` font-mono fgh ${geistSans.variable} ${geistMono.variable} antialiased`} >
-        <div className="body-container">
-          <div className="nav-container"><Navbar /></div>
-          <div className="page-body "><div className="child-container mx-auto " >
+      <body className={`font-mono ${geistSans.variable} ${geistMono.variable} antialiased min-h-screen p-1  flex flex-col`}>
+        <Navbar />
+        <main className="flex-grow">
+          <div className="container mx-auto flex justify-center items-center px-4 sm:px-6 h-[83vh] overflow-auto lg:px-8">
             {children}
-          </div></div>
-          <Footer></Footer>
-        </div>
+          </div>
+        </main>
+        <Footer />
       </body>
+
     </html>
   );
 }
