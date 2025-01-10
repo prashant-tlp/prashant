@@ -17,10 +17,15 @@ const config: Config = {
         'nav-slide' :{
           from:{"transform":"translateX(100%)",visibility: 'hidden'},
           to:{"transform":"translateX(0)",visibility: 'visible'},
-        }
+        },
+        'pop-ele':{
+          from:{scale:'0.5',opacity:'0'},
+          to:{scale:'1',opacity:'1'},
+        },
       },
       animation: {
-        'nav-slide': 'nav-slide 0.5s ease-in normal',
+        'nav-slide': 'nav-slide 0.5s ease-in-out',
+        'pop-ele': 'pop-ele 0.5s ease-in-out normal',
         },
     },
   },
