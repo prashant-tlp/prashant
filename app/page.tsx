@@ -8,7 +8,7 @@ export default function Home() {
 
     <div className=" flex z-20 items-center overflow-hidden">
         <div className="container items-center gap-10 flex flex-col sm:flex-row relative ">
-            <div className=" flex order-2 flex-col relative z-20">
+            <div className=" flex  flex-col relative z-20">
                 <span className="w-20 h-2 bg-black dark:bg-white mb-12">
                     
                 </span>
