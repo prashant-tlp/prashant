@@ -7,9 +7,9 @@ export default function Home() {
     <div className="app-page-container items-center mx-auto">
 
     <div className=" flex z-20 items-center overflow-hidden">
-        <div className="container items-center gap-10 flex flex-col sm:flex-row relative ">
-            <div className=" flex  flex-col relative z-20">
-                <span className="w-20 h-2 bg-black dark:bg-white mb-12">
+        <div className="container items-center md:gap-10 flex flex-col sm:flex-row relative ">
+            <div className=" flex order-2  sm:order-1 flex-col relative z-20">
+                <span className="w-20 h-2 bg-black dark:bg-white sm:mb-12">
                     
                 </span>
                 <h1 className="uppercase text-3xl sm:text-5xl font-black flex flex-col leading-none ">
@@ -28,7 +28,7 @@ export default function Home() {
                         <li>Angular</li>
                         <li>Node</li>
                     </ul>
-                <div className="flex  mt-8">
+                <div className="flex  sm:mt-8">
                     <a href={`/assets/resume/Prashant.pdf`} download={true}  className="uppercase py-2 px-4 rounded-lg bg-orange-400 border-2 border-transparent  text-md mr-4 hover:bg-orange-300">
                         Download Resume
                     </a>
@@ -37,7 +37,7 @@ export default function Home() {
                     </a> */}
                 </div>
             </div>
-            <div className=" items-center sm:block sm:w-1/3 lg:w-3/5 relative">
+            <div className=" items-center order-1 sm:block sm:w-1/3 lg:w-3/5 relative">
                         <TagCloudComponent />
                 {/* <Image height={180} width={180}  src={`/assets/image/profile.png`} alt="pro" className="max-w-xs rounded-xl md:max-w-sm m-auto"/> */}
             </div>

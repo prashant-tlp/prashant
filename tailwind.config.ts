@@ -15,8 +15,8 @@ const config: Config = {
       },
       keyframes: {
         'nav-slide' :{
-          from:{"transform":"translateX(100%)",visibility: 'hidden'},
-          to:{"transform":"translateX(0)",visibility: 'visible'},
+          from:{"transform":"translateX(100%)",visibility: 'hidden', opacity:'0'},
+          to:{"transform":"translateX(0)",visibility: 'visible',opacity:'100%'},
         },
         'pop-ele':{
           from:{scale:'0.5',opacity:'0'},
@@ -24,8 +24,8 @@ const config: Config = {
         },
       },
       animation: {
-        'nav-slide': 'nav-slide 0.5s ease-in-out',
-        'pop-ele': 'pop-ele 0.5s ease-in-out normal',
+        'nav-slide': 'nav-slide 0.8s ease-in-out',
+        'pop-ele': 'pop-ele 0.7s ease-in-out normal',
         },
     },
   },
