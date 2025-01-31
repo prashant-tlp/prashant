@@ -29,9 +29,9 @@ export default function Home() {
                         <li>Node</li>
                     </ul>
                 <div className="flex  sm:mt-8">
-                    <a href={`/assets/resume/Prashant.pdf`} download={true}  className="uppercase py-2 px-4 rounded-lg bg-orange-400 border-2 border-transparent  text-md mr-4 hover:bg-orange-300">
+                    {/* <a href={`/assets/resume/Prashant.pdf`} download={true}  className="uppercase py-2 px-4 rounded-lg bg-orange-400 border-2 border-transparent  text-md mr-4 hover:bg-orange-300">
                         Download Resume
-                    </a>
+                    </a> */}
                     {/* <a href="#" className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-pink-500 text-pink-500 dark:text-white hover:bg-pink-500 hover:text-white text-md">
                         Read more
                     </a> */}
